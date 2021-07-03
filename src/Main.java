@@ -10,6 +10,7 @@ public class Main {
             countBonus =(int) payAmount/bonusPrice;
             System.out.println("сумма бонуса "+ countBonus);
         }
+        else {System.out.println("не начисляем бонус");}
         clientAccount = (long) (clientAccount+payAmount+countBonus);
         System.out.println("текущий счет клиента "+clientAccount);
     }
