@@ -5,13 +5,13 @@ public class Main {
         int bonusPrice= 100;
         int countBonus =0;
 
-        if (payAmount >= 1000) {
+        if (payAmount > 1000) {
             System.out.println("начисляем бонус");
             countBonus =(int) payAmount/bonusPrice;
             System.out.println("сумма бонуса "+ countBonus);
         }
         else {System.out.println("не начисляем бонус");}
-        clientAccount = (long) (clientAccount+payAmount+countBonus);
+        clientAccount = clientAccount+payAmount+countBonus;
         System.out.println("текущий счет клиента "+clientAccount);
     }
 }
